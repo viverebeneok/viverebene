@@ -1,0 +1,371 @@
+/* ========== ESTILOS BASE ========== */
+.android-compact-6,
+.android-compact-6 * {
+  
+  box-sizing: border-box;
+}
+
+/* Contenedor principal con dimensiones de diseño.
+   Se usa max-width para que en pantallas grandes siga centrado. */
+.android-compact-6 {
+  background: #f6f6f3;
+  padding: 10px 14px;
+  width: 360.5px;       /* Ancho base de diseño */
+  height: 750px;        /* Alto base de diseño */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.group-8,
+.capa-19,
+.capa-2,
+.capa-22,
+.capa-23,
+.capa-24 {
+  transition: opacity 0.2s ease-in-out; /* Suaviza la transición */
+}
+.group-8:hover,
+.capa-19:hover,
+.capa-2:hover,
+.capa-22:hover,
+.capa-23:hover,
+.capa-24:hover {
+  opacity: 0.85; /* Ligera reducción en transparencia para el efecto visual */
+}
+
+
+/* Contenedor de la zona principal (elementos agrupados) */
+.group-9 {
+  width: 332.5px;
+  height: 643.87px;
+  position: static;  /* Se deja igual para respetar la estructura original */
+}
+
+/* Elemento de fondo blanco con esquinas redondeadas */
+.rectangle-3 {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 291.27px;         /* 87.6% aprox. de 332.5px */
+  height: 643.87px;        /* Igual a la altura de .group-9 */
+  position: absolute;
+  left: 32.81px;           /* Aprox. 9.87% del ancho */
+  top: 41.02px;            /* Aprox. 6.26% del alto (655px) */
+}
+
+/* Contenedor de los botones (con sus imágenes y textos) */
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+  justify-content: center;
+  width: 332.5px;
+  position: absolute;
+  left: 10px;              /* 3% aprox. del ancho */
+  top: 180.47px;           /* Aprox. 27.55% del alto */
+}
+
+/* ================== ESTILOS DE BOTONES ================== */
+/* Cada botón es un bloque que contiene la imagen (de fondo) y el texto */
+.vivere-cono-contanos,
+.vivere-cono-men-con-bot-n-1,
+.vivere-cono-delivery-con-bot-n-1-1,
+.vivere-cono-franquicias-con-bot-n-2,
+.vivere-cono-www-con-bot-n-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;        /* Toman el ancho completo del contenedor botones */
+  height: 48px;       /* Alto fijo según diseño */
+  position: relative; /* Para que los elementos internos con posicionamiento absoluto se refieran a este bloque */
+  overflow: hidden;
+}
+
+/* Las imágenes que están dentro de los botones.
+   Se posicionan de forma absoluta para “cubrir” el botón según el diseño. */
+.capa-19,
+.capa-2,
+.capa-22,
+.capa-23,
+.capa-24 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  overflow: visible;
+}
+
+/* Los contenedores que agrupan el texto (y que ayudan a centrarlo) */
+.frame-18,
+.frame-17 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 210px;       /* Valor tomado del diseño */
+  height: 36px;
+  position: relative;
+  aspect-ratio: 210 / 36;
+}
+
+.frame-8 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  position: relative;
+}
+
+/* Estilos para el texto dentro de los botones.
+   Se usa text-align: center para mantener el contenido centrado. */
+.men-completo,
+.contacto-delivery,
+.tu-franquicia {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Último botón (con el sitio web) posee una estructura similar */
+.frame-22 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+.group-8 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  overflow: visible;
+}
+.frame-173 {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 262px;
+  height: 44.91px;
+  position: relative;
+  aspect-ratio: 262 / 44.91;
+}
+.frame-82 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 262px;
+  height: 14px;
+  position: relative;
+  aspect-ratio: 262 / 14;
+}
+.viverebeneok{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.viverebeneok-span {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+}
+.viverebeneok-span2 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+}
+.www-viverebene-com-ar-span {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 300;
+}
+.www-viverebene-com-ar-span2 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
+}
+.www-viverebene-com-ar {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* ================== DEMÁS ELEMENTOS ================== */
+.vivere-vasito-2 {
+  width: 70.4px;
+  height: 70px;
+  position: absolute;
+  left: 256.5px;
+  top: 6px;
+  aspect-ratio: 70.4 / 70;
+}
+.dise-o {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+}
+.vivere-clave-wifi-2 {
+  width: 222.18px;
+  height: 17.73px;
+  position: absolute;
+  left: 65.16px;
+  top: 700.27px;
+  overflow: hidden;
+  aspect-ratio: 222.18 / 17.73;
+}
+.capa-25 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+}
+.vivere-nuestras-2 {
+  width: 106.2px;
+  height: 31.24px;
+  position: absolute;
+  left: 121.5px;
+  top: 97px;
+  overflow: hidden;
+  aspect-ratio: 106.2 / 31.24;
+}
+.capa-26 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+}
+.vivere-estrellita-2 {
+  width: 13.23px;
+  height: 13.51px;
+  position: absolute;
+  left: 50.58px;
+  top: 56.38px;
+  overflow: hidden;
+  aspect-ratio: 13.23 / 13.51;
+}
+.capa-27 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+}
+
+.opciones {
+  color: #298067;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 62px;
+  top: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.group-1 {
+  width: 141.61px;
+  height: 50.71px;
+  position: absolute;
+  left: 95px;
+  top: 600px;
+  overflow: visible;
+}
+.capa-28 {
+  width: 19px;
+  height: 18px;
+  position: absolute;
+  left: 270px;
+  top: 676px;
+  overflow: visible;
+}
+
+/* ========== RESPONSIVIDAD ========== */
+
+/* 1. Para pantallas muy pequeñas (320px - 349px) */
+@media (min-width: 320px) and (max-width: 349px) {
+  .android-compact-6 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(0.90);
+    max-width: 100vh; /* Ajuste para evitar desbordes */
+    min-height: 100vh;
+    overflow: visible;
+    margin-top: -35px;
+   
+  }
+}
+/* 2. Para pantallas pequeñas (350px - 360px) */
+@media (min-width: 350px) and (max-width: 360px) {
+  .android-compact-6 {
+    transform: scale(calc(100vw / 332.5));
+    transform-origin: top center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* 3. Para pantallas medianas (361px - 768px) */
+@media (min-width: 361px) and (max-width: 768px) {
+  .android-compact-6 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(1.1);
+    width: 350.5px;
+    max-height: 100vh;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  /* Ajuste opcional de tamaño de fuente */
+  .men-completo,
+  .contacto-delivery,
+  .tu-franquicia,
+  .www-viverebene-com-ar {
+    font-size: 14px;
+  }
+}
+
+/* 4. Para pantallas grandes móviles (769px en adelante) */
+@media (min-width: 769px) {
+  .android-compact-6 {
+    transform: scale(1.5);
+    transform-origin: top center;
+    width: calc(332.5px * 1.5);
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .men-completo,
+  .contacto-delivery,
+  .tu-franquicia,
+  .www-viverebene-com-ar {
+    font-size: 20px;
+  }
+}
