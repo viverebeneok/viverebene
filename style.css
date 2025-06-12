@@ -10,12 +10,17 @@
 .android-compact-6 {
   background: #f6f6f3;
   padding: 10px 14px;
-  width: 360.5px;       /* Ancho base de diseño */
-  height: 750px;        /* Alto base de diseño */
-  position: relative;
+  width: 360.5px; /* Ancho base de diseño */
+  height: 750px; /* Alto base de diseño */
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) scale(calc(min(100vw / 332.5, 100vh / 750)));
+  transform-origin: top left;
   overflow: hidden;
-  margin: 0 auto;
+  padding-bottom: env(safe-area-inset-bottom); /* Ajuste para iPhone */
 }
+
 
 
 .group-8,
@@ -48,7 +53,7 @@
   background: #ffffff;
   border-radius: 15px;
   width: 291.27px;         /* 87.6% aprox. de 332.5px */
-  height: 643.87px;        /* Igual a la altura de .group-9 */
+  height: 530.87px;        /* Igual a la altura de .group-9 */
   position: absolute;
   left: 32.81px;           /* Aprox. 9.87% del ancho */
   top: 41.02px;            /* Aprox. 6.26% del alto (655px) */
@@ -58,13 +63,13 @@
 .botones {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   width: 332.5px;
   position: absolute;
   left: 10px;              /* 3% aprox. del ancho */
-  top: 180.47px;           /* Aprox. 27.55% del alto */
+  top: 160.47px;           /* Aprox. 27.55% del alto */
 }
 
 /* ================== ESTILOS DE BOTONES ================== */
@@ -232,7 +237,7 @@
   height: 17.73px;
   position: absolute;
   left: 65.16px;
-  top: 700.27px;
+  top: 590.27px;
   overflow: hidden;
   aspect-ratio: 222.18 / 17.73;
 }
@@ -247,7 +252,7 @@
   height: 31.24px;
   position: absolute;
   left: 121.5px;
-  top: 97px;
+  top: 87px;
   overflow: hidden;
   aspect-ratio: 106.2 / 31.24;
 }
@@ -277,22 +282,22 @@
   color: #298067;
   text-align: center;
   font-family: "Unbounded", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 1000;
   position: absolute;
-  left: 62px;
-  top: 131px;
+  left: 100px;
+  top: 119px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .group-1 {
-  width: 141.61px;
+  width: 121.61px;
   height: 50.71px;
   position: absolute;
-  left: 95px;
-  top: 600px;
+  left: 125px;
+  top: 515px;
   overflow: visible;
 }
 .capa-28 {
@@ -300,72 +305,58 @@
   height: 18px;
   position: absolute;
   left: 270px;
-  top: 676px;
+  top: 563px;
   overflow: visible;
 }
 
-/* ========== RESPONSIVIDAD ========== */
 
+/* ========== AJUSTES PARA IPHONE / ZONA SEGURA ========== */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .android-compact-6 {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Ajuste adicional para iPhones con notch */
+@media (max-width: 430px) {
+  .android-compact-6 {
+    margin-bottom: calc(env(safe-area-inset-bottom) + 16px);
+  }
+}
+
+/* ========== RESPONSIVIDAD ========== */
 /* 1. Para pantallas muy pequeñas (320px - 349px) */
 @media (min-width: 320px) and (max-width: 349px) {
   .android-compact-6 {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%) scale(0.90);
-    max-width: 100vh; /* Ajuste para evitar desbordes */
     min-height: 100vh;
-    overflow: visible;
-    margin-top: -35px;
-   
+    min-width: 100vw;
+    transform: translateX(-50%) scale(0.90);
   }
 }
-/* 2. Para pantallas pequeñas (350px - 360px) */
+
+/* 2. Pantallas pequeñas (350px - 360px) */
 @media (min-width: 350px) and (max-width: 360px) {
   .android-compact-6 {
-    transform: scale(calc(100vw / 332.5));
-    transform-origin: top center;
     min-height: 100vh;
-    overflow: hidden;
+    min-width: 100vw;
+    transform: translateX(-50%) scale(1);
   }
 }
 
-/* 3. Para pantallas medianas (361px - 768px) */
+/* 3. Pantallas medianas (361px - 768px) */
 @media (min-width: 361px) and (max-width: 768px) {
   .android-compact-6 {
-    position: absolute;
-    left: 50%;
-    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
     transform: translateX(-50%) scale(1.1);
-    width: 350.5px;
-    max-height: 100vh;
-    overflow: hidden;
-    margin-top: 30px;
-  }
-
-  /* Ajuste opcional de tamaño de fuente */
-  .men-completo,
-  .contacto-delivery,
-  .tu-franquicia,
-  .www-viverebene-com-ar {
-    font-size: 14px;
   }
 }
 
-/* 4. Para pantallas grandes móviles (769px en adelante) */
+/* 4. Pantallas grandes móviles (769px en adelante) */
 @media (min-width: 769px) {
   .android-compact-6 {
-    transform: scale(1.5);
-    transform-origin: top center;
-    width: calc(332.5px * 1.5);
     min-height: 100vh;
-    overflow: hidden;
-  }
-
-  .men-completo,
-  .contacto-delivery,
-  .tu-franquicia,
-  .www-viverebene-com-ar {
-    font-size: 20px;
+    min-width: 100vw;
+    transform: scale(1.2);
   }
 }
