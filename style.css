@@ -11,11 +11,11 @@
   background: #f6f6f3;
   padding: 10px 14px;
   width: 360.5px; /* Ancho base de diseño */
-  height: 750px; /* Alto base de diseño */
+  height: 650px; /* Alto base de diseño */
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translateX(-50%) scale(calc(min(100vw / 332.5, 100vh / 750)));
+  transform: translateX(-50%) scale(calc(min(100vw / 332.5, 100vh / 650)));
   transform-origin: top left;
   overflow: hidden;
   padding-bottom: env(safe-area-inset-bottom); /* Ajuste para iPhone */
@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;        /* Toman el ancho completo del contenedor botones */
-  height: 48px;       /* Alto fijo según diseño */
+  height: 49px;       /* Alto fijo según diseño */
   position: relative; /* Para que los elementos internos con posicionamiento absoluto se refieran a este bloque */
   overflow: hidden;
 }
@@ -101,7 +101,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 48px;
+  height: 49px;
   overflow: visible;
 }
 
@@ -149,7 +149,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 48px;
+  height: 49px;
   position: relative;
 }
 .group-8 {
@@ -157,7 +157,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 48px;
+  height: 49px;
   overflow: visible;
 }
 .frame-173 {
@@ -283,10 +283,10 @@
   text-align: center;
   font-family: "Unbounded", sans-serif;
   font-size: 25px;
-  font-weight: 1000;
+  font-weight: 900;
   position: absolute;
   left: 100px;
-  top: 119px;
+  top: 115px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -296,7 +296,7 @@
   width: 121.61px;
   height: 50.71px;
   position: absolute;
-  left: 125px;
+  left: 112px;
   top: 515px;
   overflow: visible;
 }
@@ -330,7 +330,7 @@
   .android-compact-6 {
     min-height: 100vh;
     min-width: 100vw;
-    transform: translateX(-50%) scale(0.90);
+    transform: translateX(-45%) scale(0.88);
   }
 }
 
@@ -344,19 +344,39 @@
 }
 
 /* 3. Pantallas medianas (361px - 768px) */
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 361px) and (max-width: 391px) {
   .android-compact-6 {
     min-height: 100vh;
     min-width: 100vw;
-    transform: translateX(-50%) scale(1.1);
+    transform: translateX(-56%) scale(1.2);
+  }
+}
+
+
+/* 4. Pantallas medianas (361px - 768px) */
+@media (min-width: 392px) and (max-width: 414px) {
+  .android-compact-6 {
+    min-height: 100vh;
+    min-width: 100vw;
+    transform: translateX(-55%) scale(1.3);
+  }
+}
+
+/* 4. Pantallas medianas (361px - 768px) */
+@media (min-width: 415px) and (max-width: 768px) {
+  .android-compact-6 {
+    min-height: 100vh;
+    min-width: 100vw;
+    transform: translateX(-58%) scale(1.4);
   }
 }
 
 /* 4. Pantallas grandes móviles (769px en adelante) */
 @media (min-width: 769px) {
   .android-compact-6 {
+    left: 1%;
     min-height: 100vh;
     min-width: 100vw;
-    transform: scale(1.2);
+    transform: scale(1.4);
   }
 }
