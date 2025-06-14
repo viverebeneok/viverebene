@@ -251,8 +251,8 @@
   width: 106.2px;
   height: 31.24px;
   position: absolute;
-  left: 121.5px;
-  top: 87px;
+  left: 124.5px;
+  top: 83px;
   overflow: hidden;
   aspect-ratio: 106.2 / 31.24;
 }
@@ -285,8 +285,8 @@
   font-size: 25px;
   font-weight: 900;
   position: absolute;
-  left: 100px;
-  top: 115px;
+  left: 90px;
+  top: 112px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -301,8 +301,8 @@
   overflow: visible;
 }
 .capa-28 {
-  width: 19px;
-  height: 18px;
+  width: 17px;
+  height: 16px;
   position: absolute;
   left: 270px;
   top: 563px;
@@ -359,6 +359,7 @@
     min-height: 100vh;
     min-width: 100vw;
     transform: translateX(-51%) scale(1.2);
+
   }
 }
 
