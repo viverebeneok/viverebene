@@ -69,7 +69,7 @@
   width: 332.5px;
   position: absolute;
   left: 10px;              /* 3% aprox. del ancho */
-  top: 160.47px;           /* Aprox. 27.55% del alto */
+  top: 150.47px;           /* Aprox. 27.55% del alto */
 }
 
 /* ================== ESTILOS DE BOTONES ================== */
@@ -297,12 +297,13 @@
   height: 50.71px;
   position: absolute;
   left: 112px;
-  top: 515px;
+  top: 510px;
   overflow: visible;
 }
+/*estis es el edit*/
 .capa-28 {
-  width: 17px;
-  height: 16px;
+  width: 16px;
+  height: 15px;
   position: absolute;
   left: 270px;
   top: 563px;
