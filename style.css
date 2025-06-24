@@ -53,7 +53,7 @@
   background: #ffffff;
   border-radius: 15px;
   width: 291.27px;         /* 87.6% aprox. de 332.5px */
-  height: 530.87px;        /* Igual a la altura de .group-9 */
+  height: 550.87px;        /* Igual a la altura de .group-9 */
   position: absolute;
   left: 32.81px;           /* Aprox. 9.87% del ancho */
   top: 41.02px;            /* Aprox. 6.26% del alto (655px) */
@@ -66,9 +66,9 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 332.5px;
+  width: 321.5px;
   position: absolute;
-  left: 10px;              /* 3% aprox. del ancho */
+  left: 16px;              /* 3% aprox. del ancho */
   top: 150.47px;           /* Aprox. 27.55% del alto */
 }
 
@@ -101,7 +101,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 49px;
+  height: 100%;
   overflow: visible;
 }
 
@@ -113,7 +113,7 @@
   align-items: center;
   justify-content: center;
   width: 210px;       /* Valor tomado del diseño */
-  height: 36px;
+  height: 37px;
   position: relative;
   aspect-ratio: 210 / 36;
 }
@@ -237,7 +237,7 @@
   height: 17.73px;
   position: absolute;
   left: 65.16px;
-  top: 590.27px;
+  top: 600.27px;
   overflow: hidden;
   aspect-ratio: 222.18 / 17.73;
 }
@@ -297,7 +297,7 @@
   height: 50.71px;
   position: absolute;
   left: 112px;
-  top: 510px;
+  top: 520px;
   overflow: visible;
 }
 /*estis es el edit*/
@@ -306,7 +306,7 @@
   height: 15px;
   position: absolute;
   left: 270px;
-  top: 565px;
+  top: 585px;
   overflow: visible;
 }
 
